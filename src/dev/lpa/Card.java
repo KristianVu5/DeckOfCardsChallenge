@@ -35,7 +35,7 @@ public enum Suit {
     public static Card getFaceCard(Suit suit, char abbrev){
     int charIndex = "JQKA".indexOf(abbrev);
     if(charIndex > -1){
-        return new Card(suit, " " + abbrev, charIndex + 9);
+        return new Card(suit, String.valueOf(abbrev), charIndex + 9);
     }
         System.out.println("Invalid Face card selected");
     return null;
